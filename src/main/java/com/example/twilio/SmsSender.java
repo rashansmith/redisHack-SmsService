@@ -17,16 +17,16 @@ import com.twilio.type.PhoneNumber;
 public class SmsSender {
 
 	//@Value("${spring.twilioAccountSid}")
-	String TwilioAccountSID= "ACd150c27bed7a6c64cbf07579e6890d69";
+	String TwilioAccountSID= "";
 
 	//@Value("${spring.twilioAuthToken}")
-	String TwilioAuthToken = "bce19ac1b575f3c97a5f0fb93b47afd3";
+	String TwilioAuthToken = "";
 
 	//@Value("${spring.twilioNumber}")
-	String TwilioNumber = "+13605295026";
+	String TwilioNumber = "";
 
 	//@Value("${spring.myNumber}")
-	String MyNumber = "+15185220853";
+	String MyNumber = "";
 	
 	@Autowired
 	CustomerService customerRepo;
