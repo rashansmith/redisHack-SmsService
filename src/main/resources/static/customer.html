@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "ISO-8859-1" />
+       <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>Sign Up To Recieve local deals by Text!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   </head>
+   <body>
+   <div class="row d-flex justify-content-center">
+   <div class="col-md-6">
+      <div class="form-group row">
+	  </div>
+      <h3>Sign Up To Recieve local deals!</h3>
+      <div class="form-group row">
+	  </div>
+       
+       <form action="authentication" method="post" >
+		<div class="form-group row">
+			<label for="twilio_account_sid" class="col-sm-6 col-form-label">Name:</label>
+			<div class="col-sm-6">
+				<input type="password" class="form-control"   name="twilio_account_sid"
+					placeholder="">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="twilio_auth_token" class="col-sm-6 col-form-label">City:</label>
+			<div class="col-sm-6">
+				<input type="password" class="form-control" name="twilio_auth_token" 
+					placeholder="">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="twilio_twilio_number" class="col-sm-6 col-form-label">Cell Phone Number:</label>
+			<div class="col-sm-6">
+				<input type="password" class="form-control" name="twilio_twilio_number" 
+					placeholder="">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label for="algod_api_address" class="col-sm-6 col-form-label">Subscription Categories:</label>
+    		<div class="col-sm-6">
+    		 <div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  				<label class="form-check-label" for="defaultCheck1">
+    				Food & Supplies
+  				</label>
+			</div>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  				<label class="form-check-label" for="defaultCheck1">
+    				Professional Services
+  				</label>
+			</div>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+  				<label class="form-check-label" for="defaultCheck2">
+    				Clothing
+  				</label>
+			</div>
+			<div class="form-check">
+  				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+  				<label class="form-check-label" for="defaultCheck2">
+    				Education
+  				</label>
+			</div>
+			
+      		<!-- 	<select class="form-check" name="algod_api_address">
+        			<option selected>Choose API Address..</option>
+        			<option  name="algod_api_address">MainNet</option>
+        			<option  name="algod_api_address">TestNet</option>
+        			<option  name="algod_api_address">BetaNet</option>
+      			</select>  -->
+      		</div>
+		</div>
+		<div class="form-group row">
+			<label for="twilio_twilio_number" class="col-sm-6 col-form-label">Registration Code:</label>
+			<div class="col-sm-6">
+				<input type="password" class="form-control" name="twilio_twilio_number" 
+					placeholder="">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+		</div>
+		<div class="form-group row">
+    		<div class="col-sm-10">
+      			<button type="submit"  id="authenticate" class="btn btn-primary">Sign Up</button>
+    		</div>
+  		</div>
+	</form>
+	<div class="form-group row">
+		<div class="col-sm-6">
+	     	<div id="alertMessage"></div>
+	    </div>
+	</div>
+	</div>
+	</div>
+       
+       <!-- BootStrap Javascript -->
+       <script th:src="@{/javascript/javascript.js}"></script>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
